@@ -7,6 +7,7 @@ import {
 const initialState = {
   jobList: [],
   isLoadingJobList:false,
+  totalCount:0,
 };
 
 const rootReducer =(state = initialState, action) =>{
@@ -19,13 +20,13 @@ const rootReducer =(state = initialState, action) =>{
     case GET_JOB_LIST_SUCCESS:
       return {
         ...state,
-        jobList: [...state["jobList"], ...action.data],
+        jobList: [...action.payload?.jdList],
+        totalCount:action.payload?.totalCount,
         isLoadingJobList: false
       };
     case GET_JOB_LIST_FAILED:
       return {
         ...state,
-        jobList: [...state["jobList"]],
         isLoadingJobList: false
       };
     default:

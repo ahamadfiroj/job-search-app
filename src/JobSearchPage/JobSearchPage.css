@@ -1,0 +1,118 @@
+.page-layout{
+    padding: 64px;
+}
+h3, h2, h4 {
+    margin: 0;
+    text-transform: capitalize;
+}
+h2{
+    font-size: 14px;
+    line-height: 1.5;
+}
+h3{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    color: #8b8b8b;
+}
+.filters-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.basic-multi-select {
+    min-width: 190px;
+}
+.jd-list-wrapper{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.jd-card{
+    width: 330px;
+    height: 520px;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.jd-card-header{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.company-details{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 25px;
+    height: 40px;
+}
+.company-city{
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.description-details{
+    position: relative;
+    p{
+    white-space: pre-wrap;
+    font-size: 14px;
+    height: 220px;
+    overflow: hidden;
+    mask-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    }
+}
+.view-more-button{
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 38px);
+  color: #4943da;
+  font-size: 14px;
+}
+button{
+    border: 0;
+    background: transparent;
+    background-image: none;
+    cursor: pointer;
+}
+.jd-link{
+    width: 100%;
+    border-radius: 8px;
+    width: 100%;
+    background-color: rgb(85, 239, 196);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+    width: calc(100% - 48px);
+    display: block;
+    text-align: center;
+    padding: 18px;
+}
+.description-details-popup{
+    position: fixed;
+    top: 23%;
+    left: 18%;
+    width: 65%;
+    height: auto;
+    z-index: 2;
+}
+.close-button{
+    text-align: right;
+    position: absolute;
+    right: 24px;
+    button{
+        font-size: 32px;
+    }
+}
