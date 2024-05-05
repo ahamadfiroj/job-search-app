@@ -1,10 +1,9 @@
 export const ROLE_OPTIONS = [
-    { value: 'Senior Engineer', label: 'Senior Engineer' },
-    { value: 'Backend Engineer', label: 'Backend Engineer' },
-    { value: 'Frontend Engineer', label: 'Frontend Engineer' },
-    { value: 'Founding Engineer', label: 'Founding Engineer' },
-    { value: 'Product Manager', label: 'Product Manager' },
-    { value: 'Fullstack Engineer', label: 'Fullstack Engineer' },
+    { value: 'backend', label: 'Backend' },
+    { value: 'frontend', label: 'Frontend' },
+    { value: 'ios', label: 'Ios' },
+    { value: 'android', label: 'Android' },
+    { value: 'tech lead', label: 'Tech Lead' },
     { value: 'Product Designer', label: 'Product Designer' },
     { value: 'Android Developer', label: 'Android Developer' },
     { value: 'Platform Engineer', label: 'Platform Engineer' }
@@ -21,22 +20,22 @@ export const NUMBER_OF_EMPLOYEE_OPTIONS =[
 ]
 
 export const EXPERIENCE_OPTIONS =[
-    { value: '1', label: '1' },
-    { value: '2', label: '2' },
-    { value: '3', label: '3' },
-    { value: '4', label: '4' },
-    { value: '5', label: '5' },
-    { value: '6', label: '6' },
-    { value: '7', label: '7' },
-    { value: '8', label: '8' },
-    { value: '9', label: '9' },
-    { value: '10', label: '10' }
+    { value: 1, label: '1' },
+    { value: 2, label: '2' },
+    { value: 3, label: '3' },
+    { value: 4, label: '4' },
+    { value: 5, label: '5' },
+    { value: 6, label: '6' },
+    { value: 7, label: '7' },
+    { value: 8, label: '8' },
+    { value: 9, label: '9' },
+    { value: 10, label: '10' }
 ]
 
 export const WORK_PREFERENCE_OPTIONS =[
-    { value: 'Remote', label: 'Remote' },
-    { value: 'Hybrid', label: 'Hybrid' },
-    { value: 'In-office', label: 'In-office' },
+    { value: 'remote', label: 'Remote' },
+    { value: 'hybrid', label: 'Hybrid' },
+    { value: 'in-office', label: 'In-office' },
 ]
 export const BASE_PAY_OPTIONS =[
     { value: '0L', label: '0L' },

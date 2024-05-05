@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Select from 'react-select'
 import { FILTERS_FORMS } from "./SearchFilters.constant";
 
-const SearchFilters = ({jobList})=>{
-    const [selectedFiltersObj, setSelectedFiltersObj] = useState({})
-    const onChangeHandler = (selectedValue, name)=>{
-        setSelectedFiltersObj({
-            ...selectedFiltersObj,
-            [name]:selectedValue,
-        })
-    }
+const SearchFilters = ({onChangeHandler, selectedFiltersObj})=>{
+    
     return <div className="filters-wrapper">{Object.values(FILTERS_FORMS).map((item)=>{
         return <Select 
         {...item}

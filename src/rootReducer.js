@@ -3,6 +3,7 @@ import {
     GET_JOB_LIST_INIT, 
     GET_JOB_LIST_SUCCESS 
 } from "./JobList/JobList.constant";
+import { getCumulativeJdList } from "./JobSearchPage/Utils";
 
 const initialState = {
   jobList: [],
@@ -18,9 +19,10 @@ const rootReducer =(state = initialState, action) =>{
         isLoadingJobList: true
       };
     case GET_JOB_LIST_SUCCESS:
+      const cumulativeJdList = getCumulativeJdList(state.jobList , action.payload) // take cumulative data
       return {
         ...state,
-        jobList: [...action.payload?.jdList],
+        jobList: [...cumulativeJdList],
         totalCount:action.payload?.totalCount,
         isLoadingJobList: false
       };

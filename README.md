@@ -1,5 +1,14 @@
 # Getting Started with Create React App
 
+1- Search job application are completed with static filter options, filter functionality working as it FE filter,
+2- Search job cards are implemented as we get data in JD list, on view more click open a popup to show description details.
+
+3- This project is configured on react latest version react 18 and node version 14.17.1
+
+4- To store fetched data we use redux store
+
+5- Filters are managed by useState hooks.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
